@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Rubab Atta | Full Stack Web Developer</title>
+    <meta
+      name="description"
+      content="Rubab Atta — Full Stack Web Developer Portfolio"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=20260908" />
+  </head>
+  <body>
+    <div id="progress"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="noise"></div>
+    <div class="parallax-bg">
+      <span data-speed="0.08"></span><span data-speed="-0.12"></span
+      ><span data-speed="0.18"></span>
+    </div>
+
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <header class="header">
+      <a class="brand magnetic" href="#home"><b>R</b> Rubab<span>.</span></a>
+      <button
+        type="button"
+        class="menu-btn"
+        aria-label="Toggle navigation menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <i></i><i></i><i></i>
+      </button>
+      <nav id="primary-navigation">
+        <a class="active" href="#home">Home</a><a href="#about">About</a
+        ><a href="#projects">Projects</a> <a href="#skills">Skills</a
+        ><a href="#experience">Experience</a><a href="#services">Services</a
+        ><a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-inner wrap">
+          <div class="hero-copy reveal">
+            <div class="status"><span></span> AVAILABLE FOR FREELANCE WORK</div>
+            <p class="kicker">HELLO, I'M</p>
+            <h1>
+              <span class="type-line">Rubab <em>Atta.</em></span>
+            </h1>
+            <h2>
+              <span class="role">Full Stack Web Developer</span
+              ><span class="typing-cursor">|</span>
+            </h2>
+            <p class="hero-desc">
+              I build modern, responsive and user-friendly websites & web
+              applications with clean design and practical functionality.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn primary magnetic" href="#projects"
+                >View My Work <b>↗</b></a
+              >
+              <a class="btn secondary magnetic" href="#contact"
+                >Let's Work Together</a
+              >
+            </div>
+            <div class="hero-tech">
+              <span>React</span><span>JavaScript</span><span>Node.js</span
+              ><span>Next.js</span><span>MySQL</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="orbit-system">
+              <div class="orbit orbit-a"></div>
+              <div class="orbit orbit-b"></div>
+              <div class="orbit-dot od1"></div>
+              <div class="orbit-dot od2"></div>
+              <div class="orbit-dot od3"></div>
+              <div class="photo-wrap">
+                <div class="photo-glow"></div>
+                <img src="assets/img2.jpeg" alt="Replace with Rubab's photo" />
+              </div>
+            </div>
+            <div class="hero-float hf1">
+              <strong>10+</strong><small>Projects Built</small>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span>SCROLL TO EXPLORE</a>
+      </section>
+
+      <section id="about" class="section wrap">
+        <div class="section-title reveal">
+          <h2>A developer who loves to <span>build.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="photo-card">
+              <img src="assets/img1.jpeg" alt="Replace with Rubab's photo" />
+            </div>
+            <div class="photo-corner"></div>
+          </div>
+          <div class="about-copy reveal">
+            <p class="large">
+              I’m a passionate web developer focused on creating clean,
+              responsive and user-friendly digital experiences.
+            </p>
+            <p>
+              I enjoy turning ideas into functional products — from polished
+              interfaces and interactions to backend logic and databases. I’m
+              continuously learning and building real-world projects to grow as
+              a Full Stack Developer.
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <strong class="counter" data-target="10">10</strong><b>+</b
+                ><small>Projects</small>
+              </div>
+              <div class="stat">
+                <strong class="counter" data-target="5">5</strong><b>+</b
+                ><small>Core Technologies</small>
+              </div>
+              <div class="stat">
+                <strong class="counter" data-target="100">100</strong><b>%</b
+                ><small>Passion to Learn</small>
+              </div>
+            </div>
+            <a class="text-link magnetic" href="#contact"
+              >Let’s create something →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section wrap">
+        <div class="section-title reveal">
+          <h2>Things I’ve <span>built.</span></h2>
+          <small
+            >Projects that showcase my frontend, full stack and problem-solving
+            skills.</small
+          >
+        </div>
+        <div class="project-grid">
+          <article class="project reveal">
+            <div class="project-cover p1">
+              <img class="project-image" src="assets/admin.jpeg" alt="Shuttle tracking dashboard on laptop, tablet and phone" />
+            </div>
+            <div class="project-body">
+              <h3>Shuttle Tracking System</h3>
+              <small>REACT · FLASK · SQLITE · LEAFLET</small>
+              <p>
+                Real-time shuttle tracking with routes, stops, bus status and
+                map-based information.
+              </p>
+              <a href="https://rubabatta.github.io/FinalYearProject/" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-cover p2">
+              <img class="project-image" src="assets/ecom.jpeg" alt="Responsive e-commerce interface on multiple devices" />
+            </div>
+            <div class="project-body">
+              <h3>E-Commerce Experience</h3>
+              <small>REACT · JAVASCRIPT · TAILWIND</small>
+              <p>
+                Responsive shopping interface designed around clean product
+                discovery and usability.
+              </p>
+              <a href="https://rubabatta.github.io/ecommerce-web/" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-cover p3">
+              <img class="project-image" src="assets/optima.jpeg" alt="Optima dispatch website on laptop, tablet and phone" />
+            </div>
+            <div class="project-body">
+              <h3>Dispatch Solution</h3>
+              <small>HTML · CSS · JS · FLASK</small>
+              <p>
+                Professional business website supported by backend functionality
+                and database structure.
+              </p>
+              <a href="https://optimadispatchsolution.netlify.app/" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-cover p4">
+            </div>
+            <div class="project-body">
+              <h3>Real Estate Website</h3>
+              <small>REACT · JAVASCRIPT · CSS</small>
+              <p>
+                A responsive real estate website built in React with clean
+                property discovery and user-focused page layouts.
+              </p>
+              <a href="https://rubabatta.github.io/Coffe-shop--website/" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-cover p5">
+              <img class="project-image" src="assets/calclator mokeup.png" alt="Calculator app mockup" />
+            </div>
+            <div class="project-body">
+              <h3>Calculator App</h3>
+              <small>HTML · CSS · JAVASCRIPT</small>
+              <p>
+                A clean and responsive calculator built with HTML, CSS and
+                JavaScript for practical everyday calculations.
+              </p>
+              <a href="#contact">View project <span>↗</span></a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-cover p6">
+              <img class="project-image" src="assets/coffee.jpeg" alt="Responsive coffee shop landing page" />
+            </div>
+            <div class="project-body">
+              <h3>Modern Landing Page</h3>
+              <small>HTML · TAILWIND · JS</small>
+              <p>
+                Focused landing page with strong hierarchy, spacing and
+                responsive sections.
+              </p>
+              <a href="#contact">View project <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section dark-section">
+        <div class="wrap">
+          <div class="section-title reveal">
+            <h2>My <span>toolkit.</span></h2>
+            <small
+              >Technologies I use to turn ideas into working digital
+              products.</small
+            >
+          </div>
+          <div class="skill-layout">
+            <div class="skill-list">
+              <div class="skill reveal">
+                <div><b>HTML</b><span>95%</span></div>
+                <i><em style="--w: 95%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>CSS</b><span>92%</span></div>
+                <i><em style="--w: 92%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>JavaScript</b><span>86%</span></div>
+                <i><em style="--w: 86%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>React</b><span>84%</span></div>
+                <i><em style="--w: 84%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>Tailwind CSS</b><span>86%</span></div>
+                <i><em style="--w: 86%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>Bootstrap</b><span>85%</span></div>
+                <i><em style="--w: 85%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>Node.js</b><span>70%</span></div>
+                <i><em style="--w: 70%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>Next.js</b><span>68%</span></div>
+                <i><em style="--w: 68%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>MySQL</b><span>72%</span></div>
+                <i><em style="--w: 72%"></em></i>
+              </div>
+              <div class="skill reveal">
+                <div><b>Git & GitHub</b><span>78%</span></div>
+                <i><em style="--w: 78%"></em></i>
+              </div>
+            </div>
+            <!-- `skill-panel` removed per user request -->
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section wrap">
+        <div class="section-title reveal">
+          <h2>My learning <span>journey.</span></h2>
+          <small
+            >A timeline of the work and learning milestones shaping my
+            development journey.</small
+          >
+        </div>
+        <div class="timeline">
+          <article class="timeline-item left reveal">
+            <div class="time-card">
+              <span>2026</span>
+              <h3>Developer Hub — Web Development Intern</h3>
+              <p>
+                Worked on practical web development tasks, strengthening
+                responsive UI development, frontend implementation and
+                real-world project workflow.
+              </p>
+              <div class="chips">
+                <b>Web Development</b><b>Frontend</b><b>Responsive UI</b>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item right reveal">
+            <div class="time-card">
+              <span>2026</span>
+              <h3>Syntech Hub — Web Development Intern</h3>
+              <p>
+                Gained hands-on experience building and improving web interfaces
+                while applying modern development practices.
+              </p>
+              <div class="chips">
+                <b>Web Development</b><b>JavaScript</b><b>React</b>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item left reveal">
+            <div class="time-card">
+              <span>2026 — PRESENT</span>
+              <h3>Full Stack Development</h3>
+              <p>
+                Building React applications and expanding into Node.js, Next.js,
+                APIs and databases through practical projects.
+              </p>
+              <div class="chips"><b>React</b><b>Node.js</b><b>Next.js</b></div>
+            </div>
+          </article>
+          <article class="timeline-item right reveal">
+            <div class="time-card">
+              <span>ONGOING</span>
+              <h3>Project-Based Learning</h3>
+              <p>
+                Continuously strengthening full stack skills by creating
+                responsive websites and complete web applications.
+              </p>
+              <div class="chips"><b>MySQL</b><b>Flask</b><b>Git</b></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="section wrap">
+        <div class="section-title reveal">
+          <h2>What I can <span>build for you.</span></h2>
+        </div>
+        <div class="service-grid">
+          <article class="service reveal">
+            <small>01</small>
+            <div class="service-icon">⌘</div>
+            <h3>Responsive Websites</h3>
+            <p>
+              Modern, responsive websites that look polished across mobile,
+              tablet and desktop.
+            </p>
+            <a href="#contact">Discuss a project →</a>
+          </article>
+          <article class="service reveal">
+            <small>02</small>
+            <div class="service-icon">◈</div>
+            <h3>React Development</h3>
+            <p>
+              Interactive interfaces using reusable components and clean
+              frontend architecture.
+            </p>
+            <a href="#contact">Discuss a project →</a>
+          </article>
+          <article class="service reveal">
+            <small>03</small>
+            <div class="service-icon">✦</div>
+            <h3>Full Stack Solutions</h3>
+            <p>
+              Frontend, backend, APIs and database functionality combined into
+              practical applications.
+            </p>
+            <a href="#contact">Discuss a project →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section wrap contact">
+        <div class="contact-box reveal">
+          <h2>Let’s build something<br /><span>worth remembering.</span></h2>
+          <div class="contact-line"></div>
+          <p class="desc">
+            Have a website idea, project or collaboration in mind? I’d love to
+            hear about it.
+          </p>
+          <a class="btn primary magnetic" href="mailto:your.email@example.com"
+            >Start a Conversation ↗</a
+          >
+          <div class="socials">
+            <a
+              class="social-icon"
+              href="#"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.84v2.08h.05c.53-1 1.83-2.08 3.77-2.08 4.03 0 4.78 2.65 4.78 6.09V24h-4V16.5c0-1.78-.03-4.07-2.48-4.07-2.48 0-2.86 1.94-2.86 3.95V24h-4V8.5z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a class="social-icon" href="#" aria-label="GitHub" title="GitHub">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 012.9-.39c.98.01 1.97.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.44-2.7 5.42-5.27 5.7.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              class="social-icon"
+              href="mailto:your.email@example.com"
+              aria-label="Email"
+              title="Email"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 5.25A2.25 2.25 0 013.75 3h16.5A2.25 2.25 0 0122.5 5.25v13.5A2.25 2.25 0 0120.25 21H3.75A2.25 2.25 0 011.5 18.75V5.25zM3.75 5.25l8.25 5.25L20.25 5.25"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-inner">
+        <div class="footer-left">
+          <a class="brand" href="#home"><b>R</b> Rubab<span>.</span></a>
+          <small>Designing · Developing · Learning</small>
+        </div>
+        <nav class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-right">
+          <div class="socials footer-socials">
+            <a
+              class="social-icon"
+              href="#"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.84v2.08h.05c.53-1 1.83-2.08 3.77-2.08 4.03 0 4.78 2.65 4.78 6.09V24h-4V16.5c0-1.78-.03-4.07-2.48-4.07-2.48 0-2.86 1.94-2.86 3.95V24h-4V8.5z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a class="social-icon" href="#" aria-label="GitHub" title="GitHub">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 012.9-.39c.98.01 1.97.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.44-2.7 5.42-5.27 5.7.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+          <small>© 2026 Rubab Atta</small>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
