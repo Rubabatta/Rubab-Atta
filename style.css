@@ -125,21 +125,24 @@ a {
 }
 .cursor-dot {
   position: fixed;
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: #c4b5fd;
-  box-shadow: 0 0 15px #8b5cf6;
+  background: #fff;
+  box-shadow:
+    0 0 0 3px rgba(196, 181, 253, 0.18),
+    0 0 18px rgba(139, 92, 246, 0.9);
   pointer-events: none;
   z-index: 101;
   transform: translate(-50%, -50%);
 }
 .cursor-ring {
   position: fixed;
-  width: 34px;
-  height: 34px;
-  border: 1px solid rgba(167, 139, 250, 0.55);
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(196, 181, 253, 0.62);
   border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(139, 92, 246, 0.12);
   pointer-events: none;
   z-index: 100;
   transform: translate(-50%, -50%);
@@ -150,10 +153,11 @@ a {
     background 0.2s;
 }
 .cursor-ring.hover {
-  width: 58px;
-  height: 58px;
-  border-color: rgba(196, 181, 253, 0.8);
-  background: rgba(139, 92, 246, 0.06);
+  width: 54px;
+  height: 54px;
+  border-color: rgba(196, 181, 253, 0.9);
+  background: rgba(139, 92, 246, 0.08);
+  box-shadow: 0 0 0 6px rgba(139, 92, 246, 0.06);
 }
 .header {
   height: 76px;
@@ -166,9 +170,10 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(9, 4, 17, 0.9);
+  background: rgba(9, 4, 17, 0.82);
   backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(196, 181, 253, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
   z-index: 100;
   overflow: visible;
 }
@@ -181,9 +186,12 @@ a {
   place-items: center;
   width: 30px;
   height: 30px;
-  background: var(--purple);
-  border-radius: 9px;
+  background: linear-gradient(145deg, #c4b5fd, #7c3aed 68%);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 10px 5px 10px 5px;
   margin-right: 7px;
+  color: #160a25;
+  box-shadow: 0 5px 16px rgba(124, 58, 237, 0.28);
 }
 .brand span {
   color: var(--purple);
@@ -197,11 +205,23 @@ a {
   font-weight: 700;
 }
 .header nav a {
+  position: relative;
   transition: 0.25s;
 }
 .header nav a:hover,
 .header nav a.active {
   color: #fff;
+}
+.header nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #c4b5fd, #8b5cf6);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.65);
 }
 .menu-btn {
   display: none;
@@ -719,9 +739,8 @@ a {
 }
 .dark-section {
   max-width: none;
-  background: #07030d;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  background: transparent;
+  border: 0;
 }
 .dark-section > .wrap {
   max-width: 1160px;

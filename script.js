@@ -142,7 +142,7 @@ document.querySelectorAll("a,button,.project,.service").forEach((el) => {
         vx: rand(-0.2, 0.2),
         vy: rand(-0.3, 0.3),
         r: rand(0.6, 2.2),
-        alpha: rand(0.06, 0.16),
+        alpha: rand(0.12, 0.28),
       });
     }
   }
