@@ -2377,10 +2377,13 @@ footer {
     grid-template-columns: 1fr;
 
     gap: 15px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .project-cover {
-    height: 175px;
+    height: 160px;
   }
 
   .project-cover h3 {
@@ -2388,7 +2391,7 @@ footer {
   }
 
   .project-body {
-    padding: 17px;
+    padding: 15px;
   }
 
   .project-body p {
